@@ -767,6 +767,20 @@ footer {
     padding: 100px 0;
 }
 
+.cpg-section-magenta {
+    background: #e0218a;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+}
+
+.cpg-section-violet {
+    background: #4a00e0;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+}
+
 .cpg-section-gradient {
     background: linear-gradient(135deg, #440099 0%, #0c002b 100%);
     color: white;
