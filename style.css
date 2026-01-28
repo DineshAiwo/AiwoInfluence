@@ -735,3 +735,239 @@ footer {
         font-size: 2rem;
     }
 }
+
+/* --- CPG Industry Refinement Styles --- */
+:root {
+    --cpg-vibrant-purple: #b000ff;
+    --cpg-neon-pink: #ff00d4;
+    --cpg-deep-navy: #0c002b;
+    --cpg-light-accent: #00ff88;
+    /* Neon green from light trails */
+    --cpg-glass-white: rgba(255, 255, 255, 0.1);
+}
+
+/* Base Sections */
+.cpg-section-purple {
+    background: var(--cpg-vibrant-purple);
+    color: white;
+    padding: 100px 0;
+    position: relative;
+}
+
+.cpg-section-navy {
+    background: var(--cpg-deep-navy);
+    color: white;
+    padding: 100px 0;
+    position: relative;
+}
+
+.cpg-section-white {
+    background: #ffffff;
+    color: #333;
+    padding: 100px 0;
+}
+
+.cpg-section-gradient {
+    background: linear-gradient(135deg, #440099 0%, #0c002b 100%);
+    color: white;
+    padding: 100px 0;
+}
+
+.cpg-section-pink-grad {
+    background: linear-gradient(135deg, #ff00d4 0%, #b000ff 100%);
+    color: white;
+    padding: 100px 0;
+}
+
+/* Hero Refined */
+.cpg-hero-refined {
+    height: 90vh;
+    background: linear-gradient(rgba(12, 0, 43, 0.4), rgba(12, 0, 43, 0.6)),
+        url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1600&h=900&fit=crop');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-light-trails {
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    width: 60%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 255, 136, 0.2) 0%, transparent 70%);
+    filter: blur(80px);
+    transform: rotate(-15deg);
+    z-index: 1;
+}
+
+/* Stat Box Refined (Translucent Glass) */
+.cpg-stat-box {
+    background: rgba(176, 0, 255, 0.25);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+}
+
+.stat-box-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.stat-box-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.stat-box-sub {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Visual Layouts */
+.cpg-image-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cpg-floating-stats {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 280px;
+}
+
+.cpg-phone-mockup {
+    width: 80%;
+    margin: 0 auto;
+    filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.3));
+}
+
+/* Component: Playbook List */
+.playbook-list {
+    list-style: none;
+    padding: 0;
+}
+
+.playbook-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.playbook-list li i {
+    margin-right: 15px;
+    color: var(--cpg-light-accent);
+}
+
+/* Component: Client Logos Grid */
+.cpg-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.cpg-logo-grid img {
+    width: 100%;
+    padding: 20px;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+}
+
+/* Animations Refinement */
+[data-aos="neon-glow"] {
+    position: relative;
+}
+
+[data-aos="neon-glow"]::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: inherit;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: -1;
+}
+
+[data-aos="neon-glow"].aos-animate::after {
+    opacity: 0.3;
+}
+
+/* Utility Additions for CPG */
+.fw-extrabold {
+    font-weight: 800;
+}
+
+.tracking-widest {
+    letter-spacing: 0.15em;
+}
+
+.opacity-20 {
+    opacity: 0.2;
+}
+
+.opacity-30 {
+    opacity: 0.3;
+}
+
+.opacity-80 {
+    opacity: 0.8;
+}
+
+.z-index-10 {
+    z-index: 10;
+    position: relative;
+}
+
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.bg-dark-glass {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-accent {
+    color: var(--cpg-light-accent) !important;
+}
+
+@media (max-width: 991px) {
+    .cpg-logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cpg-floating-stats {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .cpg-hero-refined {
+        height: auto;
+        padding: 100px 0;
+    }
+}
