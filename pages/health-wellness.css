@@ -1,0 +1,402 @@
+/* ===================================
+   Health & Wellness Industry Page Styles
+   =================================== */
+
+:root {
+    --wellness-magenta: #e91e63;
+    --wellness-purple: #4a148c;
+    --wellness-gradient: linear-gradient(135deg, #4a148c 0%, #e91e63 100%);
+    --wellness-light: #fce4ec;
+    --wellness-soft: #f8bbd0;
+    --dark-purple-bg: #1a0b2e;
+}
+
+/* Utilities */
+.py-100 {
+    padding: 100px 0;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.text-magenta {
+    color: var(--wellness-magenta);
+}
+
+.bg-wellness {
+    background-color: var(--wellness-magenta);
+}
+
+.bg-dark-purple {
+    background-color: var(--dark-purple-bg);
+}
+
+.bg-magenta-gradient {
+    background: var(--wellness-gradient);
+}
+
+/* Buttons */
+.btn-wellness {
+    background: var(--wellness-magenta);
+    color: white;
+    border: none;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 12px 35px;
+    transition: all 0.3s ease;
+}
+
+.btn-wellness:hover {
+    background: #c2185b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(233, 30, 99, 0.3);
+    color: white;
+}
+
+/* Hero Section */
+.wellness-hero {
+    position: relative;
+    background: #2d1b4d;
+    overflow: hidden;
+}
+
+.hero-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(233, 30, 99, 0.2), transparent);
+}
+
+.hero-image-grid {
+    position: relative;
+    padding: 20px;
+}
+
+.hero-img-item img {
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.main-img {
+    position: relative;
+    z-index: 2;
+    transform: rotate(-2deg);
+}
+
+.item-2 {
+    position: absolute;
+    bottom: -50px;
+    right: -20px;
+    width: 250px;
+    z-index: 3;
+    transform: rotate(5deg);
+}
+
+/* Stats Section */
+.wellness-card-main {
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-overlay-card {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item .stat-number {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.stat-item .stat-val {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--wellness-magenta);
+}
+
+.stats-grid-wellness {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.stat-box .stat-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--wellness-magenta);
+}
+
+.stat-box .stat-desc {
+    color: #666;
+    font-weight: 600;
+}
+
+/* Title Decoration */
+.title-line-wellness {
+    width: 80px;
+    height: 4px;
+    background: var(--wellness-magenta);
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+/* KOL Cards */
+.kol-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 400px;
+    cursor: pointer;
+}
+
+.kol-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.kol-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.kol-card:hover img {
+    transform: scale(1.1);
+}
+
+.kol-card:hover .kol-info {
+    transform: translateY(0);
+}
+
+/* Built for Brand */
+.stat-item-list {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-item-list .stat-val {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--wellness-purple);
+    line-height: 1;
+}
+
+.stat-item-list .stat-label {
+    font-weight: 600;
+    color: #777;
+    margin-top: 5px;
+}
+
+.video-mockup {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.play-btn-wellness {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--wellness-magenta);
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.play-btn-wellness:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Compliance Section */
+.case-card-wellness {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.text-magenta {
+    color: var(--wellness-magenta) !important;
+}
+
+/* Metrics Section */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.metric-box {
+    background: var(--wellness-light);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.metric-val {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--wellness-purple);
+}
+
+.metric-label {
+    font-weight: 600;
+    color: #555;
+}
+
+/* Chart Styles */
+.chart-container-wellness {
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.bar-group {
+    margin-bottom: 25px;
+}
+
+.bar-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bar-wp {
+    height: 12px;
+    background: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.bar-inner {
+    height: 100%;
+    background: var(--wellness-gradient);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 800;
+    animation: barGrow 1.5s ease-out;
+}
+
+@keyframes barGrow {
+    from {
+        width: 0;
+    }
+}
+
+.check-list-wellness {
+    list-style: none;
+    padding: 0;
+}
+
+.check-list-wellness li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+.check-list-wellness li::before {
+    content: '\f058';
+    font-family: 'Font Awesome 6 Free';
+    position: absolute;
+    left: 0;
+    color: var(--wellness-magenta);
+    font-size: 1.3rem;
+}
+
+/* Member Cards */
+.member-card {
+    text-align: center;
+}
+
+.member-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid var(--wellness-light);
+}
+
+.member-info h5 {
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.member-info p {
+    color: var(--wellness-magenta);
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .wellness-hero {
+        text-align: center;
+    }
+
+    .hero-image-grid {
+        margin-top: 50px;
+    }
+
+    .stats-grid-wellness {
+        grid-template-columns: 1fr;
+    }
+
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .py-100 {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .display-2 {
+        font-size: 3rem;
+    }
+
+    .item-2 {
+        width: 150px;
+        bottom: -30px;
+    }
+}
