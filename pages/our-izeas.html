@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our IZEAs | Creator Campaigns Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="our-izeas.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">IZEA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="industriesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Industries
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-industries" aria-labelledby="industriesDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-shopping-bag"></i> CPG</a></li>
+                            <li><a class="dropdown-item" href="health-wellness.html"><i class="fas fa-heartbeat"></i>
+                                    Health & Wellness</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-film"></i> Media & Entertainment</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-car"></i> Mobility</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-utensils"></i> Restaurant</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-store"></i> Retail</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-laptop"></i> Tech & Electronics</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item dropdown-cta" href="#">See All Industries</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="our-izeas.html">Our IZEAs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-purple" href="#signup">Work With Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="izeas-hero">
+        <div class="container text-center">
+            <h1 class="display-3 text-white mb-4" data-aos="fade-up">Our IZEAs</h1>
+            <p class="lead text-white mb-0" data-aos="fade-up" data-aos-delay="100">
+                Explore successful influencer marketing campaigns
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section bg-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="filter-tabs">
+                        <button class="filter-btn active">All Campaigns</button>
+                        <button class="filter-btn">Beauty</button>
+                        <button class="filter-btn">Tech</button>
+                        <button class="filter-btn">Fashion</button>
+                        <button class="filter-btn">Food & Beverage</button>
+                        <button class="filter-btn">Lifestyle</button>
+                    </div>
+                </div>
+                <div class="col-md-4 text-end">
+                    <select class="form-select filter-select">
+                        <option selected>Sort by: Most Recent</option>
+                        <option>Most Viewed</option>
+                        <option>Highest Engagement</option>
+                        <option>Oldest First</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaign Grid -->
+    <section class="campaigns-grid py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Campaign Card Template - Repeat for multiple campaigns -->
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="50">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">2:45</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Beauty Brand Launch Campaign</h6>
+                            <p class="campaign-creator">@beautycreator</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 2.5M</span>
+                                <span><i class="fas fa-heart"></i> 125K</span>
+                                <span><i class="fas fa-comment"></i> 8.5K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">1:30</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Tech Product Review</h6>
+                            <p class="campaign-creator">@techinfluencer</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 1.8M</span>
+                                <span><i class="fas fa-heart"></i> 95K</span>
+                                <span><i class="fas fa-comment"></i> 5.2K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="150">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">3:15</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Fashion Week Highlights</h6>
+                            <p class="campaign-creator">@fashionista</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 3.2M</span>
+                                <span><i class="fas fa-heart"></i> 180K</span>
+                                <span><i class="fas fa-comment"></i> 12K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">2:10</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Food & Beverage Tasting</h6>
+                            <p class="campaign-creator">@foodie</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 1.5M</span>
+                                <span><i class="fas fa-heart"></i> 88K</span>
+                                <span><i class="fas fa-comment"></i> 6.3K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="50">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">1:45</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Fitness Challenge Series</h6>
+                            <p class="campaign-creator">@fitnessguru</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 2.1M</span>
+                                <span><i class="fas fa-heart"></i> 110K</span>
+                                <span><i class="fas fa-comment"></i> 7.8K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">2:30</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Travel Vlog Adventure</h6>
+                            <p class="campaign-creator">@travelblogger</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 4.2M</span>
+                                <span><i class="fas fa-heart"></i> 220K</span>
+                                <span><i class="fas fa-comment"></i> 15K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="150">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">1:55</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Skincare Routine Tutorial</h6>
+                            <p class="campaign-creator">@skincarequeen</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 1.9M</span>
+                                <span><i class="fas fa-heart"></i> 105K</span>
+                                <span><i class="fas fa-comment"></i> 9.2K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">3:00</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Gaming Stream Highlights</h6>
+                            <p class="campaign-creator">@progamer</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 5.5M</span>
+                                <span><i class="fas fa-heart"></i> 310K</span>
+                                <span><i class="fas fa-comment"></i> 22K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="50">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">2:20</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Home Decor Transformation</h6>
+                            <p class="campaign-creator">@homedecor</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 1.3M</span>
+                                <span><i class="fas fa-heart"></i> 75K</span>
+                                <span><i class="fas fa-comment"></i> 4.5K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">1:40</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Productivity App Demo</h6>
+                            <p class="campaign-creator">@techreview</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 980K</span>
+                                <span><i class="fas fa-heart"></i> 52K</span>
+                                <span><i class="fas fa-comment"></i> 3.1K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="150">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">2:05</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Automotive Review</h6>
+                            <p class="campaign-creator">@carguy</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 2.7M</span>
+                                <span><i class="fas fa-heart"></i> 145K</span>
+                                <span><i class="fas fa-comment"></i> 10K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">1:50</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Music Festival Coverage</h6>
+                            <p class="campaign-creator">@musiclover</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 3.8M</span>
+                                <span><i class="fas fa-heart"></i> 195K</span>
+                                <span><i class="fas fa-comment"></i> 13K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="50">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">2:35</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Coding Tutorial Series</h6>
+                            <p class="campaign-creator">@developer</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 1.2M</span>
+                                <span><i class="fas fa-heart"></i> 68K</span>
+                                <span><i class="fas fa-comment"></i> 5.5K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">1:25</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Pet Care Tips</h6>
+                            <p class="campaign-creator">@petlover</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 1.6M</span>
+                                <span><i class="fas fa-heart"></i> 92K</span>
+                                <span><i class="fas fa-comment"></i> 6.8K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="150">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">3:10</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Sustainable Living Guide</h6>
+                            <p class="campaign-creator">@ecofriendly</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 2.3M</span>
+                                <span><i class="fas fa-heart"></i> 125K</span>
+                                <span><i class="fas fa-comment"></i> 9.5K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="campaign-card">
+                        <div class="campaign-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop"
+                                alt="Campaign">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="campaign-duration">2:15</div>
+                        </div>
+                        <div class="campaign-info">
+                            <h6 class="campaign-title">Photography Masterclass</h6>
+                            <p class="campaign-creator">@photographer</p>
+                            <div class="campaign-stats">
+                                <span><i class="fas fa-eye"></i> 1.7M</span>
+                                <span><i class="fas fa-heart"></i> 98K</span>
+                                <span><i class="fas fa-comment"></i> 7.2K</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-5" data-aos="fade-up">
+                <button class="btn btn-purple btn-lg load-more-btn">
+                    <i class="fas fa-sync-alt me-2"></i>Load More Campaigns
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="cta-card" data-aos="zoom-in">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <h2 class="text-white mb-3">Ready to Create Your Own Success Story?</h2>
+                                <p class="text-white mb-4">Join thousands of brands and creators who are transforming
+                                    their marketing with IZEA's influencer platform.</p>
+                            </div>
+                            <div class="col-lg-5 text-lg-end">
+                                <a href="#signup" class="btn btn-light btn-lg me-2 mb-2">Get Started</a>
+                                <a href="#contact" class="btn btn-outline-light btn-lg mb-2">Contact Sales</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 class="mb-4">SOLUTIONS</h5>
+                    <ul class="footer-links flex-column">
+                        <li><a href="#">For Brands</a></li>
+                        <li><a href="#">For Agencies</a></li>
+                        <li><a href="#">For Creators</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-4">COMPANY</h5>
+                    <ul class="footer-links flex-column">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-4">RESOURCES</h5>
+                    <ul class="footer-links flex-column">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-4">CONNECT</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary opacity-25">
+            <div class="text-center">
+                <p class="mb-0 text-white-50">&copy; 2026 IZEA. All rights reserved. | Privacy Policy | Terms of
+                    Service
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>
