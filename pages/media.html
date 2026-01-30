@@ -13,14 +13,16 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../style.css">
+    <!-- GSAP Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 
 <body class="bg-dark">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">Aiwo Influence</a>
+            <a class="navbar-brand" href="../index.html">AiwoInfluence</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -315,43 +317,48 @@
         </div>
     </section>
 
-    <!-- Footer Standard -->
-    <footer id="signup" class="bg-black py-5">
+    <!-- Footer -->
+    <footer id="signup">
         <div class="container">
-            <div class="row gy-4">
-                <div class="col-lg-3">
-                    <h4 class="text-white fw-bold mb-4">IZEA</h4>
-                    <p class="text-muted">Leading the world in creator economy tech and services since 2006.</p>
-                </div>
-                <div class="col-lg-3">
-                    <h5 class="text-white mb-4">Solutions</h5>
-                    <ul class="list-unstyled text-muted">
-                        <li class="mb-2"><a href="#" class="text-reset text-decoration-none">For Brands</a></li>
-                        <li class="mb-2"><a href="#" class="text-reset text-decoration-none">For Agencies</a></li>
-                        <li class="mb-2"><a href="#" class="text-reset text-decoration-none">For Creators</a></li>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 class="mb-4">SOLUTIONS</h5>
+                    <ul class="footer-links flex-column">
+                        <li><a href="#">For Brands</a></li>
+                        <li><a href="#">For Agencies</a></li>
+                        <li><a href="#">For Creators</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
-                    <h5 class="text-white mb-4">Company</h5>
-                    <ul class="list-unstyled text-muted">
-                        <li class="mb-2"><a href="about.html" class="text-reset text-decoration-none">About Us</a></li>
-                        <li class="mb-2"><a href="#" class="text-reset text-decoration-none">Careers</a></li>
-                        <li class="mb-2"><a href="resources.html" class="text-reset text-decoration-none">Resources</a>
-                        </li>
+                <div class="col-md-3">
+                    <h5 class="mb-4">COMPANY</h5>
+                    <ul class="footer-links flex-column">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 text-lg-end">
-                    <h5 class="text-white mb-4">Follow Us</h5>
-                    <div class="d-flex gap-3 justify-content-lg-end">
-                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                <div class="col-md-3">
+                    <h5 class="mb-4">RESOURCES</h5>
+                    <ul class="footer-links flex-column">
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-4">CONNECT</h5>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
-            <hr class="my-5 border-secondary opacity-20">
-            <div class="text-center text-muted small">
-                © 2026 IZEA Worldwide, Inc. All rights reserved.
+            <hr class="my-4 border-secondary opacity-25">
+            <div class="text-center">
+                <p class="mb-0 text-white-50">&copy; 2026 Aiwo. All rights reserved. | Privacy Policy | Terms of Service
+                </p>
             </div>
         </div>
     </footer>
@@ -360,10 +367,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        // Init AOS
         AOS.init({
             duration: 1000,
             once: true,
-            offset: 200
+            offset: 100,
+            easing: 'ease-out-cubic'
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         });
     </script>
 </body>
